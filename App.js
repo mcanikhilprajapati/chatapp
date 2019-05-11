@@ -2,7 +2,7 @@ import React from 'react'
 import {Provider} from 'react-redux'
 import {configureStore} from './app/store'
 import Navigation from './app/Navigation'
-global.isdoctor=false;
+global.isdoctor=true;
 const store = configureStore();
 
 const App = () =>

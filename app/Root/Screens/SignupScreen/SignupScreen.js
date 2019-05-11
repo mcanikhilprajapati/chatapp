@@ -35,7 +35,7 @@ class SignupActivity extends Component {
         ];
 
         let stateData = [{
-            value: 'New York',
+            value: 'Gujarat',
         }, {
             value: 'AAAA',
         }, {
@@ -126,7 +126,7 @@ class SignupActivity extends Component {
                             navigate('LoginScreen');
                         }}>
                         <Text
-                            style={{fontWeight: 'bold'}}>{'SIGN IN FOR IZZY CHATBOT'}</Text>
+                            style={{fontWeight: 'bold'}}>{'SIGN IN'}</Text>
                     </TouchableOpacity>
 
 

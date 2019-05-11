@@ -49,6 +49,7 @@ class UserProfileScreen extends Component {
                     <View style={styles.usercard}>
                         <View>
                             <View style={{flexDirection: 'row', alignItems: 'center'}}>
+
                                 <Image source={userPic} style={styles.userpic}/>
 
                                 <View style={{width: '100%'}}>
@@ -118,8 +119,8 @@ class UserProfileScreen extends Component {
 
                     <View style={styles.usercard}>
 
-                        <Text style={styles.labelTitle}>{'Email'}</Text>
-                        <Text style={styles.labelDesc}>{'test@gmail.com'}</Text>
+                        {/*<Text style={styles.labelTitle}>{'Email'}</Text>*/}
+                        {/*<Text style={styles.labelDesc}>{'test@gmail.com'}</Text>*/}
 
 
                         <Text style={styles.labelTitle}>{'Education'}</Text>

@@ -4,7 +4,7 @@ import {Dropdown} from 'react-native-material-dropdown';
 import styles from './EditUserProfileScreenStyle'
 import {TextInput} from 'react-native-paper';
 import tlogo from "../../../../assets/logoizzy.png";
-
+import {ImagePicker} from 'expo';
 
 class SignupActivity extends Component {
     constructor(props) {
@@ -12,41 +12,26 @@ class SignupActivity extends Component {
 
         this.state = {
             username: null,
-            password: null
+            password: null,
+            image: null,
         };
     }
 
+    _pickImage = async () => {
+        let result = await ImagePicker.launchImageLibraryAsync({
+            allowsEditing: true,
+            aspect: [4, 3],
+        });
 
+        console.log(result);
+
+        if (!result.cancelled) {
+            this.setState({image: result.uri});
+        }
+    };
     render() {
-        let countryData = [{
-            value: 'United State',
-        }, {
-            value: 'AAAA',
-        }, {
-            value: 'BBB',
-        }
-            , {
-                value: 'CCC',
-            }
-            , {
-                value: 'DDD',
-            }
-        ];
-
-        let stateData = [{
-            value: 'New York',
-        }, {
-            value: 'AAAA',
-        }, {
-            value: 'BBB',
-        }
-            , {
-                value: 'CCC',
-            }
-            , {
-                value: 'DDD',
-            }
-        ];
+        let {image} = this.state;
+       
 
         return (
             <View style={styles.container1}>
@@ -63,7 +48,13 @@ class SignupActivity extends Component {
 
 
                     <View style={{alignItems: 'center'}}>
-                        <Image source={tlogo} style={styles.image}/>
+                        <Image source={image ? {uri: image} : tlogo} style={styles.image}/>
+
+                        <TouchableOpacity
+                            onPress={this._pickImage}
+                        >
+                            <Text style={{padding: 10}}>{'Pick Image'}</Text>
+                        </TouchableOpacity>
                     </View>
                     <TextInput
                         label='NAME'

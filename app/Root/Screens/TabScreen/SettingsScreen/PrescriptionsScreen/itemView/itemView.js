@@ -1,4 +1,4 @@
-import {Text, View, Image,TouchableOpacity} from "react-native";
+import {Text, View, Image, TouchableOpacity} from "react-native";
 import React, {Component} from "react";
 import styles from './itemViewStyle'
 import download from '../../../../../../assets/ic_download_black_48dp.png'
@@ -14,8 +14,14 @@ export default class CustomRow extends Component {
         return (
             <TouchableOpacity
                 onPress={() => {
+
+
                     const {navigate} = this.props.navigation;
-                   // navigate('NewPrescriptionsScreen');
+
+                    {
+                        global.isdoctor &&
+                        navigate('NewPrescriptionsScreen');
+                    }
                 }}
 
                 style={styles.container}>
@@ -30,10 +36,11 @@ export default class CustomRow extends Component {
                             key={this.props.item.id.toString()}>{'Username here'}</Text>
 
                     </View>
-                    <View style={{flexDirection: 'row',position: 'absolute',right:10}}>
+                    {!global.isdoctor &&
+                    <View style={{flexDirection: 'row', position: 'absolute', right: 10}}>
                         <Image source={download} style={styles.icon}/>
                         <Image source={share} style={styles.icon}/>
-                    </View>
+                    </View>}
                 </View>
             </TouchableOpacity>
         );

@@ -85,7 +85,6 @@ class ChatScreen extends Component {
             <View style={styles.container}>
                 <Text style={styles.titleStyle}>{'Chat'}</Text>
 
-                {!global.isdoctor &&
 
                 <TouchableOpacity style={styles.appoinmentContainer}
                                   onPress={() => {
@@ -95,7 +94,6 @@ class ChatScreen extends Component {
                 >
                     <Text style={styles.labelAppoinment}>{'Contacts'}</Text>
                 </TouchableOpacity>
-                }
 
 
                 <TouchableOpacity

@@ -1,7 +1,7 @@
 import {Image,ScrollView, Text, TouchableOpacity, View} from "react-native";
 import React, {Component} from "react";
 import styles from './NewPrescriptionsScreenStyle'
-import tlogo from "../../../../../../assets/logoizzy.png";
+import tlogo from "../../../../../../assets/mianlog.png";
 import {TextInput} from "react-native-paper";
 import {Dropdown} from "react-native-material-dropdown";
 

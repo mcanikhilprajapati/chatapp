@@ -53,14 +53,8 @@ class UserContactScreen extends Component {
                            style={{height: 30, width: 30, alignItems: 'center', marginRight: 15, marginTop: 5,}}/>
                     <Text style={styles.titleStyle}>{'New Call'}</Text>
                 </View>
-                {/*<TouchableOpacity style={styles.appoinmentContainer}*/}
-                {/*onPress={()=>{*/}
 
-                {/*}}*/}
-                {/*>*/}
-                {/*<Text style={styles.labelAppoinment}>{'Search'}</Text>*/}
-                {/*</TouchableOpacity>*/}
-                {global.isDoctor &&
+                {global.isdoctor &&
 
                 <TouchableOpacity
                     style={styles.searchView}>

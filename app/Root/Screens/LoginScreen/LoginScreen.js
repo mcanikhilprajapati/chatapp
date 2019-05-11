@@ -65,7 +65,7 @@ class LoginScreen extends Component {
                             <Text style={styles.innerButton}>{'SIGN IN'}</Text>
                         </View>
                     </TouchableOpacity>
-                    {!global.isdoctor &&
+
                     <TouchableOpacity
                         style={{alignSelf: 'center', marginBottom: 20}}
                         onPress={() => {
@@ -77,7 +77,7 @@ class LoginScreen extends Component {
                         <Text
                             style={{fontWeight: 'bold'}}>{'SIGN UP FOR AN ACCOUNT'}</Text>
                     </TouchableOpacity>
-                    }
+
 
 
                     <TouchableOpacity

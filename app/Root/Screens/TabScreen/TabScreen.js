@@ -44,8 +44,8 @@ const Tab = createBottomTabNavigator
             }),
         }
         , 'UserAccount': {
-            //screen: UserProfileScreenNew,
-            screen: UserProfileScreen,
+            screen: UserProfileScreenNew,
+           // screen: UserProfileScreen,
             navigationOptions: () => ({
                 tabBarIcon: ({tintColor, focused}) => (
                     <Image style={focused ? {height: 48, width: 48, resizeMode: 'contain'} : {

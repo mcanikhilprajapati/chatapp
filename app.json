@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "izzypatient",
-    "slug": "izzypatient",
+    "name": "izzydoctor",
+    "slug": "izzydoctor",
     "privacy": "public",
     "sdkVersion": "32.0.0",
     "platforms": [

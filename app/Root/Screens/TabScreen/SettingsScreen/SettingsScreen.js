@@ -72,6 +72,7 @@ class SettingsScreen extends Component {
                                 width: '50%'
                             }}>9876543212</TextInput>
                     </View>
+
                     <View style={{
                         width: '100%',
                         backgroundColor: '#c8c8c8',
@@ -79,8 +80,7 @@ class SettingsScreen extends Component {
                         marginTop: 10,
                         marginBottom: 10
                     }}/>
-
-
+                    {!global.isdoctor &&
                     <View
                         style={{flexDirection: 'row'}}>
                         <Text style={{
@@ -97,6 +97,8 @@ class SettingsScreen extends Component {
                                        width: '50%'
                                    }}>test@izzy.com</TextInput>
                     </View>
+                    }
+
                 </View>
 
 
@@ -105,7 +107,7 @@ class SettingsScreen extends Component {
                         <TouchableOpacity
                             onPress={() => {
                                 const {navigate} = this.props.navigation;
-                                 navigate('PrescriptionsScreen');
+                                navigate('PrescriptionsScreen');
                             }}
                         ><Text style={{
                             fontWeight: 'bold',
@@ -121,7 +123,7 @@ class SettingsScreen extends Component {
                         marginTop: 10,
                         marginBottom: 10
                     }}/>
-
+                    {!global.isdoctor &&
                     <View
                     >
                         <TouchableOpacity
@@ -138,7 +140,7 @@ class SettingsScreen extends Component {
 
                             }}>{'Add Payment'}</Text></TouchableOpacity>
 
-                    </View>
+                    </View>}
 
                 </View>
 
