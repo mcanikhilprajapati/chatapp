@@ -7,14 +7,14 @@
     "eject": "expo eject"
   },
   "dependencies": {
-    "expo": "^32.0.0",
+    "expo": "^35.0.1",
     "immutability-helper": "^3.0.0",
     "immutable": "^3.8.2",
     "lodash": "^4.17.11",
     "md5": "^2.2.1",
     "prop-types": "latest",
     "react": "16.5.0",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-35.0.0.tar.gz",
     "react-native-elements": "^1.1.0",
     "react-native-material-dropdown": "^0.11.1",
     "react-native-paper": "^2.15.2",
