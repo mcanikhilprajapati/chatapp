@@ -25,12 +25,12 @@ class LoginScreen extends Component {
                 </View>
 
 
-                <View style={{position: 'absolute', bottom: 15, left: 25, right: 25, flex: 1, width: '100%'}}>
+                <View style={{ flex: 1, width: '100%'}}>
                     <View>
                         <Text style={{
                             fontSize: 25,
                             fontWeight: 'bold',
-                            marginTop: 70,
+marginTop:50,
                             marginBottom: 10
                         }}>{`Let's go in`}</Text>
                         <Text style={{marginBottom: 35}}>{'Enter your email and password'}</Text>
@@ -53,8 +53,8 @@ class LoginScreen extends Component {
                         />
 
                     </View>
-                    <TouchableOpacity style={styles.buttonstylelogin}
-
+                    <TouchableOpacity
+style={{marginTop:20,}}
                                       onPress={() => {
 
 
@@ -67,7 +67,7 @@ class LoginScreen extends Component {
                     </TouchableOpacity>
 
                     <TouchableOpacity
-                        style={{alignSelf: 'center', marginBottom: 20}}
+                        style={{alignSelf: 'center', marginBottom: 20,marginTop:20}}
                         onPress={() => {
 
 

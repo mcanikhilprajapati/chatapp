@@ -108,7 +108,7 @@ class SignupActivity extends Component {
                         />
 
                     </View>
-                    <TouchableOpacity style={styles.buttonstylelogin}
+                    <TouchableOpacity style={{}}
 
                                       onPress={() => {
                                           const {navigate} = this.props.navigation;
